@@ -1,0 +1,148 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f8ff; /* Light and calming background */
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Location Input */
+#location-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#location-input input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  transition: border-color 0.3s ease;
+}
+
+#location-input input:focus {
+  border-color: #5cb85c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+#location-input button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#location-input button:hover {
+  background-color: #4cae4c;
+}
+
+/* Map */
+#map {
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Weather Info */
+#weather-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Booking Form */
+#booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#booking-form h2 {
+  color: #337ab7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#booking-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="number"],
+#booking-form input[type="tel"],
+#booking-form select,
+#booking-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+#booking-form input[type="text"]:focus,
+#booking-form input[type="number"]:focus,
+#booking-form input[type="tel"]:focus,
+#booking-form select:focus,
+#booking-form textarea:focus {
+  border-color: #337ab7;
+  outline: none;
+  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5);
+}
+
+#booking-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23777' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+  background-size: 16px;
+  padding-right: 35px;
+}
+
+#booking-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+#booking-form button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#booking-form button:hover {
+  background-color: #286090;
+}
